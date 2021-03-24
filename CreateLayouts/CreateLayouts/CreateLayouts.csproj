@@ -78,6 +78,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="start.scr" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="myCommands.Designer.cs">
