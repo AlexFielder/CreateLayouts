@@ -12,7 +12,7 @@
                     Icon="./Contents/Resources/CreateLayouts.png">
   <CompanyDetails Name="Alex Fielder" Email="alex.fielder@gmail.com" URL="https://ukedev.site" Phone="CHANGEME"/>
   <Components>
-    <RuntimeRequirements OS="Win64" Platform="Platform1" SeriesMin="SeriesMin1" SeriesMax="SeriesMax1">RuntimeRequirements1</RuntimeRequirements>
+    <RuntimeRequirements OS="Win64" Platform="Platform1" SeriesMin="R19.0" SeriesMax="R30.0" />
     <ComponentEntry AppName="AppName1" Version="Version1" ModuleName="ModuleName1" AppDescription="AppDescription1" LoadOnAutoCADStartup="LoadOnAutoCADStartup1" LoadOnCommandInvocation="LoadOnCommandInvocation1" LoadOnProxy="LoadOnProxy1">
       <Commands>
         <Command Local="Local1" Global="Global1">Command1</Command>
