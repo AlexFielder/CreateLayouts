@@ -82,9 +82,7 @@
     <None Include="PackageContents.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="start.scr">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="start.scr" />
     <None Include="VIEWPORT-Block.dwg" />
   </ItemGroup>
   <ItemGroup>
@@ -127,18 +125,22 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="PackageContents.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="PackageContents.xml" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="CreateLayouts.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="CreateLayouts.htm" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>if not exist "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\" mkdir "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\"
+    <PostBuildEvent>if exist "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\" del /f "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\"
+if not exist "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\" mkdir "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\"
+xcopy /y "$(ProjectDir)PackageContents.xml" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents"
 xcopy "$(TargetDir)*.*" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\" /Y /R
-xcopy /y "$(ProjectDir)$(projectname).png" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\"</PostBuildEvent>
+xcopy /y "$(ProjectDir)$(projectname).png" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\"
+xcopy /y "$(ProjectDir)$(projectname).htm" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

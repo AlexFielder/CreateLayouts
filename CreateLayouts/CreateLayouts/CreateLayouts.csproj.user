@@ -7,6 +7,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartProgram>D:\Program Files\Autodesk\AutoCAD 2022\acad.exe</StartProgram>
     <StartAction>Program</StartAction>
-    <StartArguments>/nologo /b "%25Allusersprofile%25\Autodesk\ApplicationPlugins\CreateLayouts.bundle\start.scr"</StartArguments>
+    <StartArguments>
+    </StartArguments>
   </PropertyGroup>
 </Project>
