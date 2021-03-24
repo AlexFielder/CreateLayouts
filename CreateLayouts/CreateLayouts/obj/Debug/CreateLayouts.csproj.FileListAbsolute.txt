@@ -6,3 +6,4 @@ C:\Users\alex_\OneDrive\Documents\GitHub\CreateLayouts\CreateLayouts\CreateLayou
 C:\Users\alex_\OneDrive\Documents\GitHub\CreateLayouts\CreateLayouts\CreateLayouts\obj\Debug\CreateLayouts.csproj.CoreCompileInputs.cache
 C:\Users\alex_\OneDrive\Documents\GitHub\CreateLayouts\CreateLayouts\CreateLayouts\obj\Debug\CreateLayouts.dll
 C:\Users\alex_\OneDrive\Documents\GitHub\CreateLayouts\CreateLayouts\CreateLayouts\obj\Debug\CreateLayouts.pdb
+C:\Users\alex_\OneDrive\Documents\GitHub\CreateLayouts\CreateLayouts\CreateLayouts\bin\Debug\start.scr
