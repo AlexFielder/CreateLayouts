@@ -29,7 +29,8 @@ namespace CreateLayouts
         // context menu.
 
         // Modal Command with localized name
-        [CommandMethod("MyGroup", "MyCommand", "MyCommandLocal", CommandFlags.Modal)]
+        //[CommandMethod("MyGroup", "MyCommand", "MyCommandLocal", CommandFlags.Modal)]
+        [CommandMethod("MyCommand")]
         public void MyCommand() // This method can have any name
         {
             // Put your command code here
