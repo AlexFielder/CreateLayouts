@@ -1,0 +1,8 @@
+C:\Users\alex_\OneDrive\Documents\GitHub\CreateLayouts\CreateLayouts\CreateLayouts\bin\Debug\CreateLayouts.dll
+C:\Users\alex_\OneDrive\Documents\GitHub\CreateLayouts\CreateLayouts\CreateLayouts\bin\Debug\CreateLayouts.pdb
+C:\Users\alex_\OneDrive\Documents\GitHub\CreateLayouts\CreateLayouts\CreateLayouts\obj\Debug\CreateLayouts.csprojAssemblyReference.cache
+C:\Users\alex_\OneDrive\Documents\GitHub\CreateLayouts\CreateLayouts\CreateLayouts\obj\Debug\CreateLayouts.MyCommands.resources
+C:\Users\alex_\OneDrive\Documents\GitHub\CreateLayouts\CreateLayouts\CreateLayouts\obj\Debug\CreateLayouts.csproj.GenerateResource.cache
+C:\Users\alex_\OneDrive\Documents\GitHub\CreateLayouts\CreateLayouts\CreateLayouts\obj\Debug\CreateLayouts.csproj.CoreCompileInputs.cache
+C:\Users\alex_\OneDrive\Documents\GitHub\CreateLayouts\CreateLayouts\CreateLayouts\obj\Debug\CreateLayouts.dll
+C:\Users\alex_\OneDrive\Documents\GitHub\CreateLayouts\CreateLayouts\CreateLayouts\obj\Debug\CreateLayouts.pdb
