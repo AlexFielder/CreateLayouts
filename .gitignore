@@ -156,7 +156,6 @@ $RECYCLE.BIN/
 .DS_Store
 
 #AutoCAD dwg files
-*.dwg
 *.bak
 *.tmp
 *tmp*

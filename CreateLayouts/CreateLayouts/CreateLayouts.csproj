@@ -78,12 +78,14 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ContainsDrawingBorder.dwg" />
     <None Include="PackageContents.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="start.scr">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="VIEWPORT-Block.dwg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="myCommands.Designer.cs">
