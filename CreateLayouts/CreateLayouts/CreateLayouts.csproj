@@ -131,10 +131,14 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CreateLayouts.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>if not exist "%25Allusersprofile%25\Autodesk\ApplicationPlugins\CreateLayouts.bundle\" mkdir "%25Allusersprofile%25\Autodesk\ApplicationPlugins\CreateLayouts.bundle\"
-xcopy "$(TargetDir)*.*" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\CreateLayouts.bundle\" /Y /R</PostBuildEvent>
+    <PostBuildEvent>if not exist "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\" mkdir "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\"
+xcopy "$(TargetDir)*.*" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\" /Y /R
+xcopy /y "$(ProjectDir)$(projectname).png" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
