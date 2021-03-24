@@ -164,9 +164,11 @@ $RECYCLE.BIN/
 #7zip files
 *.7z
 *.txt
+.vs/
 
 *.suo
 *.dll
 *.pdb
 *.cache
 CreateLayouts/CreateLayouts/obj/Debug/CreateLayouts.csprojAssemblyReference.cache
+CreateLayouts/CreateLayouts/obj/Debug/CreateLayouts.csproj.FileListAbsolute.txt
