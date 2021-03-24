@@ -119,6 +119,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetDir)CreateLayouts.XML" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\CreateLayouts.bundle\"
+copy "$(TargetPath)" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\CreateLayouts.bundle\"
+copy "$(TargetDir)$(TargetName).pdb" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\CreateLayouts.bundle\"</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

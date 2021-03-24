@@ -2,6 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ReferencePath>D:\Autodesk\ObjectARX_for_AutoCAD_2022_Win_64bit_dlm\inc\;D:\Autodesk\ObjectARX_for_AutoCAD_2022_Win_64bit_dlm\inc\inc-x64</ReferencePath>
+    <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartProgram>D:\Program Files\Autodesk\AutoCAD 2022\acad.exe</StartProgram>
