@@ -53,6 +53,12 @@
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>CreateLayouts.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AcCoreMgd">
       <SpecificVersion>False</SpecificVersion>
@@ -79,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ContainsDrawingBorder.dwg" />
+    <None Include="CreateLayouts.pfx" />
     <None Include="PackageContents.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -137,8 +144,8 @@
   <PropertyGroup>
     <PostBuildEvent>if exist "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\" del /f "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\"
 if not exist "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\" mkdir "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\"
-xcopy /y "$(ProjectDir)PackageContents.xml" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents"
-xcopy "$(TargetDir)*.*" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\" /Y /R
+xcopy /y "$(ProjectDir)PackageContents.xml" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\"
+xcopy "$(TargetDir)*.*" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\" /Y /R
 xcopy /y "$(ProjectDir)$(projectname).png" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\"
 xcopy /y "$(ProjectDir)$(projectname).htm" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\"</PostBuildEvent>
   </PropertyGroup>
