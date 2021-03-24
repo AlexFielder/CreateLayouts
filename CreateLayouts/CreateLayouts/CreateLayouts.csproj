@@ -78,7 +78,9 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="start.scr" />
+    <None Include="start.scr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="myCommands.Designer.cs">
@@ -122,10 +124,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>if not exist "%25Allusersprofile%25\Autodesk\ApplicationPlugins\CreateLayouts.bundle\" mkdir "%25Allusersprofile%25\Autodesk\ApplicationPlugins\CreateLayouts.bundle\"
-copy "$(TargetDir)CreateLayouts.XML" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\CreateLayouts.bundle\"
-copy "$(TargetPath)" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\CreateLayouts.bundle\"
-copy "$(TargetDir)$(TargetName).pdb" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\CreateLayouts.bundle\"
-copy "$(SolutionDir)start.scr" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\CreateLayouts.bundle\"</PostBuildEvent>
+xcopy "$(TargetDir)*.*" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\CreateLayouts.bundle\" /Y /R</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
