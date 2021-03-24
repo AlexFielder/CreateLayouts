@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ApplicationPackage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CompanyDetails">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Name" use="required"/>
+                <xs:attribute type="xs:string" name="Email" use="required"/>
+                <xs:attribute type="xs:string" name="URL" use="optional"/>
+                <xs:attribute type="xs:string" name="Phone" use="optional"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Components">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RuntimeRequirements">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="OS"  use="optional"/>
+                      <xs:attribute type="xs:string" name="Platform" use="optional"/>
+                      <xs:attribute type="xs:string" name="SeriesMin" use="optional"/>
+                      <xs:attribute type="xs:string" name="SeriesMax" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ComponentEntry" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Commands">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Command" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="Local" use="optional"/>
+                                  <xs:attribute type="xs:string" name="Global" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="AppName" use="required"/>
+                  <xs:attribute type="xs:string" name="Version" use="optional"/>
+                  <xs:attribute type="xs:string" name="ModuleName" use="required"/>
+                  <xs:attribute type="xs:string" name="AppDescription" use="optional"/>
+                  <xs:attribute type="xs:string" name="LoadOnAutoCADStartup" use="optional"/>
+                  <xs:attribute type="xs:string" name="LoadOnCommandInvocation" use="optional"/>
+                  <xs:attribute type="xs:string" name="LoadOnProxy" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:float" name="SchemaVersion" use="required"/>
+      <xs:attribute type="xs:string" name="AutodeskProduct" use="optional"/>
+      <xs:attribute type="xs:string" name="ProductType" use="optional"/>
+      <xs:attribute type="xs:string" name="Name" use="required"/>
+      <xs:attribute type="xs:string" name="AppVersion" use="required"/>
+      <xs:attribute type="xs:string" name="Description" use="required"/>
+      <xs:attribute type="xs:string" name="Author" use="required"/>
+      <xs:attribute type="xs:string" name="HelpFile" use="required"/>
+      <xs:attribute type="xs:string" name="ProductCode" use="required"/>
+      <xs:attribute type="xs:string" name="UpgradeCode" use="required"/>
+      <xs:attribute type="xs:string" name="Icon" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+
