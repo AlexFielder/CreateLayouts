@@ -142,7 +142,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>if exist "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\" del /f "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\"
+    <PostBuildEvent>"C:\Program Files (x86)\Windows Kits\10\App Certification Kit\signtool.exe" sign /tr http://timestamp.digicert.com /td sha256 /fd sha256 /f "$(ProjectDir)$(ProjectName).pfx" /p PenJournalPhoto0 "$(TargetPath)"
+if exist "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\" del /f "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\"
 if not exist "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\" mkdir "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\"
 xcopy /y "$(ProjectDir)PackageContents.xml" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\"
 xcopy "$(TargetDir)*.*" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\" /Y /R

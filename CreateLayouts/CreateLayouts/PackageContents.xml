@@ -13,25 +13,11 @@
   <CompanyDetails Name="Alex Fielder" Email="alex.fielder@gmail.com" URL="https://ukedev.site" Phone="CHANGEME"/>
   <Components>
     <RuntimeRequirements OS="Win64" Platform="Platform1" SeriesMin="R19.0" />
-    <ComponentEntry AppName="AppName1" Version="Version1" ModuleName="ModuleName1" AppDescription="AppDescription1" LoadOnAutoCADStartup="LoadOnAutoCADStartup1" LoadOnCommandInvocation="LoadOnCommandInvocation1" LoadOnProxy="LoadOnProxy1">
+    <ComponentEntry AppName="Create Layouts" Version="0.0.1" ModuleName="./Contents/CreateLayouts.dll" AppDescription="This plugin greatly increases Drawing layout accuracy." LoadOnAutoCADStartup="True">
       <Commands>
-        <Command Local="Local1" Global="Global1">Command1</Command>
-        <Command Local="Local2" Global="Global2">Command2</Command>
-        <Command Local="Local3" Global="Global3">Command3</Command>
-      </Commands>
-    </ComponentEntry>
-    <ComponentEntry AppName="AppName2" Version="Version2" ModuleName="ModuleName2" AppDescription="AppDescription2" LoadOnAutoCADStartup="LoadOnAutoCADStartup2" LoadOnCommandInvocation="LoadOnCommandInvocation2" LoadOnProxy="LoadOnProxy2">
-      <Commands>
-        <Command Local="Local4" Global="Global4">Command4</Command>
-        <Command Local="Local5" Global="Global5">Command5</Command>
-        <Command Local="Local6" Global="Global6">Command6</Command>
-      </Commands>
-    </ComponentEntry>
-    <ComponentEntry AppName="AppName3" Version="Version3" ModuleName="ModuleName3" AppDescription="AppDescription3" LoadOnAutoCADStartup="LoadOnAutoCADStartup3" LoadOnCommandInvocation="LoadOnCommandInvocation3" LoadOnProxy="LoadOnProxy3">
-      <Commands>
-        <Command Local="Local7" Global="Global7">Command7</Command>
-        <Command Local="Local8" Global="Global8">Command8</Command>
-        <Command Local="Local9" Global="Global9">Command9</Command>
+        <Command Local="MyCommand" Global="MyCommand" />
+        <Command Local="MyPickFirst" Global="MyPickFirst" />
+        <Command Local="MySessionCmd" Global="MySessionCmd" />
       </Commands>
     </ComponentEntry>
   </Components>

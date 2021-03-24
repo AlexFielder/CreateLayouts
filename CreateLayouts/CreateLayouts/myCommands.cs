@@ -1,4 +1,4 @@
-﻿// (C) Copyright 2021 by  
+﻿// (C) Copyright 2021 by Alex Fielder 
 //
 using Autodesk.AutoCAD.ApplicationServices;
 using Autodesk.AutoCAD.DatabaseServices;
