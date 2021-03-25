@@ -14,7 +14,7 @@
   ProductCode="{69539BB1-7446-4AC4-90E2-18C924ECD1FF}" 
   UpgradeCode="{0842BE6C-060E-43FA-9C72-68396882AEAF}" 
   Icon="./Contents/Resources/CreateLayouts.png">
-  <CompanyDetails Name="Alex Fielder" Email="alex.fielder@gmail.com" URL="https://ukedev.site" Phone="CHANGEME"/>
+  <CompanyDetails Name="Alex Fielder" Email="CHANGEME" URL="https://ukedev.site" Phone="CHANGEME"/>
   <Components>
     <RuntimeRequirements OS="Win64" Platform="AutoCAD*" SeriesMin="R19.0" />
     <ComponentEntry AppName="Create Layouts" Version="0.0.1" ModuleName="./Contents/CreateLayouts.dll" AppDescription="This plugin greatly increases Drawing layout accuracy." LoadOnAutoCADStartup="False" LoadOnCommandInvocation="True" LoadOnProxy="False">
