@@ -78,6 +78,7 @@
     <!--AME Reference End-->
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
@@ -93,6 +94,13 @@
     <None Include="VIEWPORT-Block.dwg" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InsertBlockJig.cs" />
+    <Compile Include="Jobdetails.cs" />
+    <Compile Include="KeyplanCommands.cs" />
+    <Compile Include="Keyplans.cs" />
+    <Compile Include="LayerCommands.cs" />
+    <Compile Include="LayoutCommands.cs" />
+    <Compile Include="Layouts.cs" />
     <Compile Include="myCommands.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -101,6 +109,8 @@
     <Compile Include="myPlugin.cs" />
     <Compile Include="myCommands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vports.cs" />
+    <Compile Include="ZoomCommands.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="myCommands.resx">
