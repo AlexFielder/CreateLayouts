@@ -3,26 +3,20 @@
   xmlns="http://www.w3schools.com/CreateLayouts"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.w3schools.com/CreateLayouts PackageContents.xsd"
-  SchemaVersion="1.0" 
-  AutodeskProduct="AutoCAD" 
-  ProductType="Application" 
-  Name="Create Layouts" 
-  AppVersion="0.0.1" 
-  Description="Automates layout creation" 
-  Author="Alex Fielder" 
-  HelpFile="./Contents/Resources/CreateLayouts.htm" 
-  ProductCode="{69539BB1-7446-4AC4-90E2-18C924ECD1FF}" 
-  UpgradeCode="{0842BE6C-060E-43FA-9C72-68396882AEAF}" 
-  Icon="./Contents/Resources/CreateLayouts.png">
+  SchemaVersion="1.0"
+  AutodeskProduct="AutoCAD"
+  ProductType="Application"
+  Name="Create Layouts"
+  AppVersion="0.0.1"
+  Description="Automates layout creation"
+  Author="Alex Fielder"
+  HelpFile="./Contents/Resources/CreateLayouts.htm"
+  ProductCode="{69539BB1-7446-4AC4-90E2-18C924ECD1FF}"
+  UpgradeCode="{0842BE6C-060E-43FA-9C72-68396882AEAF}"
+  Icon="./Contents/Resources/CreateLayouts.ico">
   <CompanyDetails Name="Alex Fielder" Email="alex.fielder@gmail.com" URL="https://ukedev.site" Phone="CHANGEME"/>
   <Components>
-    <RuntimeRequirements OS="Win64" Platform="AutoCAD*" SeriesMin="R19.0" />
-    <ComponentEntry AppName="Create Layouts" Version="0.0.1" ModuleName="./Contents/CreateLayouts.dll" AppDescription="This plugin greatly increases Drawing layout accuracy." LoadOnAutoCADStartup="True">
-      <Commands>
-        <Command Local="MyCommand" Global="MyCommand" />
-        <Command Local="MyPickFirst" Global="MyPickFirst" />
-        <Command Local="MySessionCmd" Global="MySessionCmd" />
-      </Commands>
-    </ComponentEntry>
+    <RuntimeRequirements OS="Win64" Platform="AutoCAD*" SeriesMin="R24.0" />
+    <ComponentEntry AppName="Create Layouts" Version="0.0.1" ModuleName="./Contents/CreateLayouts.dll" AppDescription="This plugin greatly increases Drawing layout accuracy." LoadOnAutoCADStartup="True"/>
   </Components>
 </ApplicationPackage>
