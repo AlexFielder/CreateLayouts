@@ -139,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CreateLayouts.htm" />
+    <Resource Include="PackageContents - Copy.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
@@ -147,7 +148,7 @@ if exist "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundl
 if not exist "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\" mkdir "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\"
 xcopy /y "$(ProjectDir)PackageContents.xml" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\"
 xcopy "$(TargetDir)*.*" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\" /Y /R
-xcopy /y "$(ProjectDir)$(projectname).png" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\"
+xcopy /y "$(ProjectDir)$(projectname).ico" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\"
 xcopy /y "$(ProjectDir)$(projectname).htm" "%25Allusersprofile%25\Autodesk\ApplicationPlugins\$(projectname).bundle\Contents\Resources\"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
