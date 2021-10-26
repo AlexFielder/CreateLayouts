@@ -43,6 +43,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -57,20 +58,23 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>CreateLayouts.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>IncuhiveMandM.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AcCoreMgd">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\AutoCAD 2022\accoremgd.dll</HintPath>
     </Reference>
     <Reference Include="AcDbMgd">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\AutoCAD 2022\acdbmgd.dll</HintPath>
     </Reference>
     <Reference Include="AcMgd">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\AutoCAD 2022\acmgd.dll</HintPath>
     </Reference>
     <!--ACA References Begin-->
     <!--ACA Refences End-->
@@ -87,6 +91,7 @@
   <ItemGroup>
     <None Include="ContainsDrawingBorder.dwg" />
     <None Include="CreateLayouts.pfx" />
+    <None Include="IncuhiveMandM.pfx" />
     <None Include="PackageContents.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -94,6 +99,8 @@
     <None Include="VIEWPORT-Block.dwg" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlockHelperClass.cs" />
+    <Compile Include="DBUtils.cs" />
     <Compile Include="InsertBlockJig.cs" />
     <Compile Include="Jobdetails.cs" />
     <Compile Include="KeyplanCommands.cs" />
@@ -109,6 +116,7 @@
     <Compile Include="myPlugin.cs" />
     <Compile Include="myCommands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCSTools.cs" />
     <Compile Include="Vports.cs" />
     <Compile Include="ZoomCommands.cs" />
   </ItemGroup>

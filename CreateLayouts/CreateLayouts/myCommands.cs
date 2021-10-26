@@ -74,7 +74,7 @@ namespace CreateLayouts
         int ISPOSP = 0; // default to zero = ISP.
         String BlockName = "";
 
-        [CommandMethod("CL")]
+        [CommandMethod("CreateLayouts")]
         public void CreateLayouts()
         {
             // Before we change anything, we should save some details about the drawing - don't want to break anything!

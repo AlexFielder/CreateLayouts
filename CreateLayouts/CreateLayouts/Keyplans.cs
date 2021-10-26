@@ -4,9 +4,15 @@ using Autodesk.AutoCAD.DatabaseServices;
 
 namespace CreateLayouts
 {
-    internal class Keyplans
+    public class Keyplans
     {
-        internal int groupint;
-        internal ObjectId oid;
+        /// <summary>
+        /// 
+        /// </summary>
+        public int groupint { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public ObjectId oid { get; set; }
     }
 }

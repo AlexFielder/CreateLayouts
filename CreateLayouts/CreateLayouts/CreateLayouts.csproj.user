@@ -5,7 +5,7 @@
     <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartProgram>D:\Program Files\Autodesk\AutoCAD 2022\acad.exe</StartProgram>
+    <StartProgram>c:\Program Files\Autodesk\AutoCAD 2022\acad.exe</StartProgram>
     <StartAction>Program</StartAction>
     <StartArguments>
     </StartArguments>
